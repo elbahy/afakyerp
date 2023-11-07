@@ -31,6 +31,12 @@ class MyApp extends StatelessWidget {
           '/login': (context) => LoginScreen(),
           '/addInvoice': (context) => const AddInvoiceScreen()
         },
+        theme: ThemeData(
+            textTheme: Theme.of(context).textTheme.apply(
+                  fontSizeFactor: 1.2, // تغيير حجم الخط لكل النصوص
+                  fontFamily:
+                      'Tajawal', // استخدام خط مخصص إذا كنت قد قمت بتضمينه
+                )),
         home: LoginScreen(),
       ),
     );

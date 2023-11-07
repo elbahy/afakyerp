@@ -1,6 +1,4 @@
 import 'dart:async';
-
-import 'package:afakyerp/features/add_invoice/add_invoice_screen.dart';
 import 'package:afakyerp/features/login/cubit/login_cubit.dart';
 import 'package:afakyerp/features/login/cubit/login_states.dart';
 import 'package:afakyerp/widgets/textfield_custom.dart';
@@ -52,7 +50,6 @@ class LoginScreen extends StatelessWidget {
                                   Timer(const Duration(seconds: 1), () {
                                     Navigator.of(context)
                                         .popAndPushNamed('/addInvoice');
-                                    // إغلاق الرسالة تلقائيا بعد ثانية
                                   });
                                   return const AlertDialog(
                                     content: Text('تم تسجيل الدخول بنجاح'),
